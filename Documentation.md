@@ -16,7 +16,7 @@ This API is a submission for the 2nd Stage of the Backend Track of HNG Internshi
 - **Description**: Get a welcome message.
 
 ### 2. Create New Person
-- **URL**: `/people`
+- **URL**: `/api`
 - **Method**: `POST`
 - **Description**: Create a new person.
 - **Request Body**:
@@ -36,7 +36,7 @@ This API is a submission for the 2nd Stage of the Backend Track of HNG Internshi
     ```
 
 ### 3. Get, Update, or Delete a Single Person by ID
-- **URL**: `/people/<int:id>`
+- **URL**: `/api/<int:id>`
 - **Methods**: `GET`, `PUT`, `DELETE`
 - **Description**: Retrieve, update, or delete a person by their ID.
 - **GET Response**:
@@ -77,7 +77,7 @@ This API is a submission for the 2nd Stage of the Backend Track of HNG Internshi
     ```
 
 ### 4. Get Names of All People
-- **URL**: `/people/all`
+- **URL**: `/api/all`
 - **Method**: `GET`
 - **Description**: Retrieve the names of all people in the database.
 - **Response**:
@@ -118,13 +118,13 @@ Here are some sample API usage scenarios using `curl` commands:
 
 - **Create a New Person**:
   ```shell
-  curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Essien"}' http://royaleonyeama.pythonanywhere.com/people
+  curl -X POST -H "Content-Type: application/json" -d '{"name": "Mark Essien"}' http://royaleonyeama.pythonanywhere.com/pi
 
 - **Retrieve a Person by ID**:
-curl http://royaleonyeama.pythonanywhere.com/people/1
+curl http://royaleonyeama.pythonanywhere.com/api/1
 
 - **Update a Person by ID**:
-curl -X PUT -H "Content-Type: application/json" -d '{"name": "Jane Smith"}' http://royaleonyeama.pythonanywhere.com/people/1
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Jane Smith"}' http://royaleonyeama.pythonanywhere.com/api/1
 
 - **Delete a Person by ID**:
-curl -X DELETE http://royaleonyeama.pythonanywhere.com/people/1
+curl -X DELETE http://royaleonyeama.pythonanywhere.com/api/1
