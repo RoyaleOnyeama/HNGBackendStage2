@@ -64,7 +64,7 @@ the person\'s name:
 bashCopy code
 
 curl -X POST -H \"Content-Type: application/json\" -d \'{\"name\":
-\"John Doe\"}\' http://royaleonyeama.pythonanywhere.com/people
+\"Mark Essien\"}\' http://royaleonyeama.pythonanywhere.com/api
 
 If successful, you\'ll receive a response indicating that the person was
 added.
@@ -78,20 +78,19 @@ To retrieve a person by ID:
 
 bashCopy code
 
-curl http://royaleonyeama.pythonanywhere.com/people/\<id\>
+curl http://royaleonyeama.pythonanywhere.com/api/\<id\>
 
 To update a person by ID:
 
 bashCopy code
 
-curl -X PUT -H \"Content-Type: application/json\" -d \'{\"name\": \"Jane
-Smith\"}\' http://royaleonyeama.pythonanywhere.com/people/\<id\>
+curl -X PUT -H \"Content-Type: application/json\" -d \'{\"name\": \"Peter Obi\"}\' http://royaleonyeama.pythonanywhere.com/api/\<id\>
 
 To delete a person by ID:
 
 bashCopy code
 
-curl -X DELETE http://royaleonyeama.pythonanywhere.com/people/\<id\>
+curl -X DELETE http://royaleonyeama.pythonanywhere.com/api/\<id\>
 
 **Get Names of All People**
 
@@ -99,22 +98,12 @@ To retrieve the names of all people in the database:
 
 bashCopy code
 
-curl http://royaleonyeama.pythonanywhere.com/people/all
+curl http://royaleonyeama.pythonanywhere.com/api/all
 
-
-**API Endpoints**
-
-For a complete list of API endpoints and their descriptions, see the
-[API
-Endpoints](https://chat.openai.com/c/71e37f09-b09d-484c-a6be-50289528dc0d#api-endpoints)
-section in the
-[Documentation](https://chat.openai.com/c/71e37f09-b09d-484c-a6be-50289528dc0d#documentation).
 
 **Documentation**
 
 You can find comprehensive documentation in the
-[Documentation.md](https://chat.openai.com/c/Documentation.md) file in
-this repository. It includes detailed information about each API
-endpoint, request/response formats, and more.
+Documentation.md file in this repository. It includes detailed information about each API endpoint, request/response formats, and more.
 
 
