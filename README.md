@@ -2,7 +2,7 @@
 Stage 2 Task: CRUD RESTful API - Backend Track - HNG Internship 2023
 # HNG Internship 2023 - Stage 2 Backend Task
 
-Welcome to the HNG Internship 2023 Stage 2 Backend Task! This README will guide you through setting up and using our simple RESTful API for managing person records.
+This README will guide you through setting up and using our simple RESTful API for managing a persons record.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
